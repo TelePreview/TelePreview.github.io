@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TelePreview</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=800px, initial-scale=0.8, maximum-scale=2.0, user-scalable=yes">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/image/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+
+    <!-- MathJax -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>        
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      });
+    </script>
+
+    <!-- visitor statistics -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <!-- model-viewer -->
+    <!-- <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script> -->
+  </head>
+
+
+  <body>
+    <!-- Title -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                TelePreview: A User-Friendly Teleoperation System with Virtual Arm Assistance for Enhanced Effectiveness
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  Anonymous Authors<sup>*</sup>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <div style="margin-top: 1rem;">
+                  <span class="author-block">
+                    <b>Anonymous Institution(s)</b> &nbsp;&nbsp;&nbsp; 
+                    * denotes equal contribution
+                  </span>
+                </div>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="./static/data/paper.pdf" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  <!-- Code Link -->
+                  <span class="link-block">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code (Coming Soon)</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Video -->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <video id="intro" controls playsinline height="100%">
+            <source src="./static/data/telepreview.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+    <!--/ Intro Video -->
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Abstract -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Teleoperation provides an effective way to collect robot data, which is crucial for learning from demonstrations. In this field, teleoperation faces several key challenges: user-friendliness for new users, safety assurance, and transferability across different platforms. While collecting real robot dexterous manipulation data by teleoperation to train robots has shown impressive results on diverse tasks, due to the morphological differences between human and robot hands, it is not only hard for new users to understand the action mapping but also raises potential safety concerns during operation.
+                To address these limitations, we introduce TelePreview. This teleoperation system offers real-time visual feedback on robot actions based on human user inputs, with a total hardware cost of less than $1,000. TelePreview allows the user to see a virtual robot that represents the outcome of the user's next movement. By enabling flexible switching between command visualization and actual execution, this system helps new users learn how to demonstrate quickly and safely.
+                We demonstrate that it outperforms other teleoperation systems across five tasks, emphasize its ease of use, and highlight its straightforward deployment across diverse robotic platforms.
+                We release our code and a deployment document on our website <a href="https://telepreview.github.io">https://telepreview.github.io</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ Abstract -->
+        
+        <!-- Teaser -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <!-- <h2 class="title is-3">Teaser</h2> -->
+            <div class="content has-text-justified" style="width: 100%; text-align: center;">
+              <figure>
+                <img src="./static/image/teaser.png" alt="Overview of TelePreview teaser">
+                <!-- <figcaption style="font-style: normal; font-size: 0.95em;">TelePreview is a user-friendly teleoperation system enabling the real-time virtual preview before robot execution.</figcaption> -->
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Framework -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Framework Overview</h2>
+            <div class="content has-text-justified" style="width: 140%; margin-left: -20%; text-align: center;">
+              <figure>
+                <img src="./static/image/framework.png" alt="Overview of TelePreview framework image">
+                <figcaption style="font-style: normal; font-size: 0.95em;">Overview of the TelePreview System Architecture: Our system consists of three main components: (1) Various input devices, including RGB-D cameras, IMU mocap suits, VR headsets, mocap gloves, AR hand tracking, and EMG armbands for capturing human motion; (2) A central processing pipeline that uses SMPL-X as a standard to process wrist and hand pose data, feeding into our Preview System with joint-to-joint mapping and a non-collision retargeting network; (3) Support for different robot platforms as output devices for executing the mapped movements.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Pipeline Overview</h2>
+            <div class="content has-text-justified">
+              <figure>
+                <img src="./static/image/pipeline.png" alt="Overview of TelePreview Pipeline image">
+                <figcaption style="font-style: normal; font-size: 0.95em;">Pipeline of Our Module: The system tracks user wrist and hand poses, maps them to robot joint configurations through joint-to-joint mapping and non-collision retargeting, and provides visual preview before physical execution. We achieve precise alignment between virtual and physical robots through AprilTag calibration.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!--/ Overview -->
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">Task Videos</h2>
+
+        <div class="columns">
+          <div class="column">
+            <figure class="image">
+              <video controls style="width: 100%;">
+                <source src="./static/video/boxrotation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered" style="margin-top: 0.5rem;">Box Rotation</figcaption>
+            </figure>
+          </div>
+          <div class="column">
+            <figure class="image">
+              <video controls style="width: 100%;">
+                <source src="./static/video/cupstack.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered" style="margin-top: 0.5rem;">Cup Stack</figcaption>
+            </figure>
+          </div>
+          <div class="column">
+            <figure class="image">
+              <video controls style="width: 100%;">
+                <source src="./static/video/hang.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered" style="margin-top: 0.5rem;">Hang</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column is-5">
+            <figure class="image">
+              <video controls style="width: 100%;">
+                <source src="./static/video/pickplace.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered" style="margin-top: 0.5rem;">Pick &amp; Place</figcaption>
+            </figure>
+          </div>
+          <div class="column is-5">
+            <figure class="image">
+              <video controls style="width: 100%;">
+                <source src="./static/video/pour.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="has-text-centered" style="margin-top: 0.5rem;">Pour</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- BibTex -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>TODO</code></pre>
+      </div>
+    </section>
+    <!--/ BibTex -->
+
+    <!-- Footer -->
+    <footer class="footer", style="padding: 40px 0;">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p style="text-align: center;">
+                This website is designed based on
+                <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+                <br>
+                Thanks for your visiting😊!
+                <span id="busuanzi_container_site_pv">
+                  Total Page Views: <span id="busuanzi_value_site_pv"></span>
+                </span>
+                <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/ Footer -->
+
+  </body>
+</html>
